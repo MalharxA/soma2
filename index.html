@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            text-align: center;
+            color: #333;
+        }
+        .hero {
+            background: url('your-background-image.jpg') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .btn {
+            background-color: #ff4c61;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #f53e55;
+        }
+        .page {
+            padding: 50px;
+            text-align: center;
+        }
+        .thanks {
+            background-color: #ffd1d1;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        #extraContent {
+            display: none; /* Hidden by default */
+            background-color: #ffe5be;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        #extraContent1 {
+            display: none; /* Hidden by default */
+            background-color: #ffe5be;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        #extraContent2 {
+            display: none; /* Hidden by default */
+            background-color: #ffe5be;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Landing Page -->
+    <div class="hero">
+        <div>
+            <h1>Will You Be My Valentine?</h1>
+            <button class="btn" onclick="showMessage()">Yes, I Do!</button>
+            <div id="extraContent1">
+                <h3>LETSS FUCKINGG GOOO!!! TwT</h3>
+                <p>Every moment with you is a gift. I can't wait to make more memories together. You're my forever Valentine Somaa.</p>
+                <p>I love you today, tomorrow, and always</p>
+            </div>
+            <button class="btn" onclick="alert('wrong answer cutie')">no</button>
+           
+        </div>
+    </div>
+
+    <!-- Message Page -->
+    <div class="page" id="message-page">
+        <h2>I'm So Glad I Met You</h2>
+        <p>From the moment we met, my life has been brighter, and every moment with you has made me feel truly lucky.</p>
+        
+        <!-- Button that shows more content when clicked -->
+        <button class="btn" onclick="showMoreContent()">Click to See More</button>
+        
+        <!-- Hidden content to be displayed when the button is clicked -->
+        <div id="extraContent">
+            <h3>Here's a little secret: I really love you from the bottom of my heart my babyy!</h3>
+            <p>I can't imagine my life without you in it. You're my everything. 💕</p>
+            <p>I can't wait to hold you close and never let go. You're my favorite place to be.</p>
+        </div>
+
+    </div>
+
+    <!-- Thank You Page -->
+    <div class="page thanks" id="thankyou-page">
+        <h2>You Made My Day!</h2>
+        <p>I'm so happy we get to celebrate this special day together. Here's to many more moments like this one.</p>
+        <button class="btn" onclick="showMoreContent1()">Celebrate with Me</button>
+        <div id="extraContent2">
+            <h3>I REALLY LOVE YOU FROM THE BOTTOM OF MY HEART SOMAA!</h3>
+            <p>Every moment with you feels like a beautiful dream I never want to wake up from.</p>
+            <P> Your smile, your laugh, and the way you make everything feel so perfect—it's all magic to me.</P>
+            <P>I feel so lucky to have you by my side, and I can’t wait to create more memories with you.</P>
+            <P>You make my world brighter, and I’m so grateful for you every single day. </P>
+            <P>Love you more than words can say.</P>
+        </div>
+
+    </div>
+
+    <script>
+        // Function to show extra content when the button is clicked
+        function showMoreContent() {
+            var extraContent = document.getElementById("extraContent");
+            extraContent.style.display = "block";  // Reveal the hidden content
+        }
+        function showMoreContent1() {
+            var extraContent2 = document.getElementById("extraContent2");
+            extraContent2.style.display = "block";  // Reveal the hidden content
+        }
+       
+
+        // Function to redirect to another page (message page) when the button is clicked
+        function showMessage() {
+            
+            var extraContent1 = document.getElementById("extraContent1");
+            extraContent1.style.display = "block";  // Reveal the hidden content
+        }
+        
+    </script>
+
+</body>
+</html>
